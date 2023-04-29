@@ -11,8 +11,9 @@
                 {% for itens in alunos %}
                 <li>Nome: {{itens[0]}}</li>
                 <li>
-                    <form method="get">
-                        <input type="text" name={{itens[1]}}>
+                    <form action="/" method="get">
+                        <input type="text" name='{{itens[1]}}'>
+                        <input type="submit" value="Submit">
                     </form>
                 </li>
                 {% endfor %}
