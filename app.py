@@ -27,11 +27,6 @@ def main():
     if request.args.get('a5', None):
         aluno5[1] = process_text(request.args['a5'])
         
-    """aluno2[1] = request.args.get('a2')
-    aluno3[1] = request.args.get('a3')
-    aluno4[1] = request.args.get('a4')
-    aluno5[1] = request.args.get('a5')"""
-
     alunos = [aluno1,aluno2,aluno3,aluno4,aluno5]
 
     return render_template('index.html', alunos=alunos)
